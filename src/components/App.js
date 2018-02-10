@@ -24,7 +24,7 @@ export default class App extends Component {
     sendAuthCodeToServer() {
         const codeStr = window.location.search.substr(1);
         // "code=AQAxD8_pslriTQVBFTInUu6zelMjoivbKIaXfpgr4v3F08IkJs-cqli2-k2yBdsWje7n6X2c7b-VmpXbW7WIpxKW7n8_cQT31RfH2ccuGsYl2E5kBKvmT5BY9zTlEmHH_THqLwhds-HrluZ0YD3iJuzpbgE6YeRGU00ReKuFJoPqaafb4DM4cUrFQUgrMsEZn6S_QOjQ"
-        const url = "https://satin-taxi.glitch.me/spotify/";
+        const url = "https://kiafarhang.com/music-master/spotify/";
 
         axios.post(url, codeStr)
             .then(response => {
@@ -50,7 +50,7 @@ export default class App extends Component {
     updateAccessToken() {
 
         const refresh_token = localStorage.getItem('refresh_token');
-        const url = `https://satin-taxi.glitch.me/refresh_token?refresh_token=${refresh_token}`;
+        const url = `https://kiafarhang.com/music-master/refresh_token?refresh_token=${refresh_token}`;
         axios.get(url)
             .then(response => {
                 localStorage.setItem('access_token', response.data.access_token);
@@ -71,7 +71,7 @@ export default class App extends Component {
 
     testAccessToken() {
         const access_token = localStorage.getItem('access_token');
-        const url = "https://satin-taxi.glitch.me/test_token/";
+        const url = "https://kiafarhang.com/music-master/test_token/";
 
         axios.get(url, { params: { access_token } })
             .then(response => {
