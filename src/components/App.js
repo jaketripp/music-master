@@ -60,7 +60,6 @@ export default class App extends Component {
                 this.testAccessToken()
             })
             .catch(e => {
-                localStorage.clear();
                 this.setState({
                     isAuthenticated: false,
                     showLoadingPage: false
@@ -81,7 +80,6 @@ export default class App extends Component {
                 });
             })
             .catch(e => {
-                console.log(e);
                 this.setState({
                     isAuthenticated: false,
                     showLoadingPage: false,
