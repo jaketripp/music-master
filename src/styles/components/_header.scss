@@ -1,0 +1,65 @@
+.header {
+    align-content: center;
+    background-color: $green;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h1 {
+        border: 8px solid white;
+        font-size: 7rem;
+        font-family: 'Bungee',"Helvetica Neue",Helvetica,Arial,sans-serif;
+        line-height: 0.9;
+        padding: $s-size $m-size;
+        text-align: center;
+        @media (max-width: 420px) {
+            font-size: 6rem;
+        }
+        @media (max-width: 350px) {
+            font-size: 5rem;
+        }
+        // text-shadow: 2px 2px 1px white, 2px 2px 2px white;
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:hover{
+            color: white;
+        }
+    }
+    @media (max-width: 590px) {
+        justify-content: center;
+    }
+}
+
+.user {
+    align-items: center;
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    min-width: 150px;
+    @media (max-width: 590px) {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2rem;
+        font-family: 'Bungee',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+
+.user--img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    border: 3px solid white;
+}
+

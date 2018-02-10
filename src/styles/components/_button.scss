@@ -1,0 +1,21 @@
+.button {
+  border: none;
+  color: #191414;
+  display: inline-block;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+  &:hover {
+    color: #191414;
+  }
+}
+
+.button--link {
+  background: none;
+}
+
+.button--secondary {
+  background: #888;
+}

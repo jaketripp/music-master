@@ -1,0 +1,20 @@
+.section {
+    padding: $l-size $xl-size;
+    @media (max-width: $desktop-breakpoint) {
+        padding: $m-size $s-size;
+    }
+}
+
+.section--green {
+    background: $green;
+}
+
+.section--blue {
+    background: $blue;
+    a {
+        color: white;
+        &:hover {
+            color: white;
+        }
+    }
+}

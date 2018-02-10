@@ -1,0 +1,26 @@
+.input-group-addon {
+  font-size: 17px !important;
+}
+
+.form-control {
+  font-size: 2rem !important;
+  padding: 20px 12px !important;
+}
+
+.form-group {
+  margin: 20px auto 0 !important;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    margin: 0;
+  }
+}
+
+.input-group__item {
+  margin: 0;
+}

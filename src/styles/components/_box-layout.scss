@@ -1,0 +1,27 @@
+.box-layout {
+  align-items: center;
+  background: $blue;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.box-layout__box {
+  background: white;
+  border-radius: 3px;
+  color: $blue;
+  padding: $l-size $m-size;
+  text-align: center;
+  width: 25rem;
+  p {
+    font-size: 2rem;
+  }
+}
+
+.box-layout__title {
+  margin: 0 0 $m-size 0;
+  line-height: 1;
+  font-family: 'Bungee',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
